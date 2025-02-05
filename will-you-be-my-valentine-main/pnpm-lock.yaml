@@ -4,10 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  Valentine: link:..\..\..\AppData\Local\pnpm\global\5\node_modules\Valentine
+
 importers:
 
   .:
     dependencies:
+      Valentine:
+        specifier: link:../../../AppData/Local/pnpm/global/5/node_modules/Valentine
+        version: link:../../../AppData/Local/pnpm/global/5/node_modules/Valentine
       react:
         specifier: ^18.2.0
         version: 18.3.1
